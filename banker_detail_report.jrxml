@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- JRXML Template for Banker Print - Detail -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports
+              http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="BankerPrintDetail"
+              pageWidth="842" pageHeight="595" columnWidth="800"
+              leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20"
+              uuid="b6e01d8f-6e24-4cb6-94b2-123456789abc">
+
+    <!-- Fields (map these to your datasource) -->
+    <field name="Name" class="java.lang.String"/>
+    <field name="Title" class="java.lang.String"/>
+    <field name="Department" class="java.lang.String"/>
+    <field name="StartDate" class="java.util.Date"/>
+    <field name="Status" class="java.lang.String"/>
+    <field name="ClientName" class="java.lang.String"/>
+    <field name="DealCode" class="java.lang.String"/>
+    <field name="Product" class="java.lang.String"/>
+    <field name="TransactionType" class="java.lang.String"/>
+    <field name="DealSize" class="java.math.BigDecimal"/>
+    <field name="JefferiesRole" class="java.lang.String"/>
+    <field name="Mandated" class="java.lang.String"/>
+    <field name="Bankers" class="java.lang.String"/>
+    <field name="JEFGross" class="java.math.BigDecimal"/>
+    <field name="SMBCFee" class="java.math.BigDecimal"/>
+    <field name="JFNFee" class="java.math.BigDecimal"/>
+    <field name="TotalGrossRevenue" class="java.math.BigDecimal"/>
+    <field name="SuccessProbability" class="java.lang.String"/>
+    <field name="FactoredRevenue" class="java.math.BigDecimal"/>
+    <field name="GroupSplit" class="java.lang.String"/>
+    <field name="BankerAllocation" class="java.lang.String"/>
+    <field name="Q1" class="java.math.BigDecimal"/>
+    <field name="Q2" class="java.math.BigDecimal"/>
+    <field name="Q3" class="java.math.BigDecimal"/>
+    <field name="Q4" class="java.math.BigDecimal"/>
+    <field name="Total" class="java.math.BigDecimal"/>
+
+    <!-- Title -->
+    <title>
+        <band height="30">
+            <staticText>
+                <reportElement x="0" y="0" width="800" height="30" uuid="title-uuid"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Banker Print - Detail]]></text>
+            </staticText>
+        </band>
+    </title>
+
+    <!-- Column Headers -->
+    <columnHeader>
+        <band height="40">
+            <staticText><reportElement x="0" y="0" width="100" height="20"/><text><![CDATA[Name]]></text></staticText>
+            <staticText><reportElement x="100" y="0" width="100" height="20"/><text><![CDATA[Title]]></text></staticText>
+            <staticText><reportElement x="200" y="0" width="100" height="20"/><text><![CDATA[Department]]></text></staticText>
+            <staticText><reportElement x="300" y="0" width="80" height="20"/><text><![CDATA[Start Date]]></text></staticText>
+            <staticText><reportElement x="380" y="0" width="80" height="20"/><text><![CDATA[Status]]></text></staticText>
+            <staticText><reportElement x="460" y="0" width="150" height="20"/><text><![CDATA[Client Name]]></text></staticText>
+            <!-- Continue adding staticText for all other fields in screenshot -->
+        </band>
+    </columnHeader>
+
+    <!-- Detail Rows -->
+    <detail>
+        <band height="20">
+            <textField><reportElement x="0" y="0" width="100" height="20"/><textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression></textField>
+            <textField><reportElement x="100" y="0" width="100" height="20"/><textFieldExpression><![CDATA[$F{Title}]]></textFieldExpression></textField>
+            <textField><reportElement x="200" y="0" width="100" height="20"/><textFieldExpression><![CDATA[$F{Department}]]></textFieldExpression></textField>
+            <textField><reportElement x="300" y="0" width="80" height="20"/><textFieldExpression><![CDATA[$F{StartDate}]]></textFieldExpression></textField>
+            <textField><reportElement x="380" y="0" width="80" height="20"/><textFieldExpression><![CDATA[$F{Status}]]></textFieldExpression></textField>
+            <textField><reportElement x="460" y="0" width="150" height="20"/><textFieldExpression><![CDATA[$F{ClientName}]]></textFieldExpression></textField>
+            <!-- Continue adding textField for all fields -->
+        </band>
+    </detail>
+
+</jasperReport>
