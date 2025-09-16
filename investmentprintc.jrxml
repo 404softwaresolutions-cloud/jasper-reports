@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BankerPrintDetail" pageWidth="2077" pageHeight="842" columnWidth="2037" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d3cf1f1f-99c5-4f5e-ae3a-6a67cf36aa45">
+	<property name="ireport.zoom" value="1.0717944050000008"/>
+	<property name="ireport.x" value="1516"/>
+	<property name="ireport.y" value="0"/>
+	<field name="Name" class="java.lang.String"/>
+	<field name="Title" class="java.lang.String"/>
+	<field name="Department" class="java.lang.String"/>
+	<field name="StartDate" class="java.lang.String"/>
+	<field name="Status" class="java.lang.String"/>
+	<field name="ClientName" class="java.lang.String"/>
+	<field name="DealCode" class="java.lang.String"/>
+	<field name="Product" class="java.lang.String"/>
+	<field name="TransactionType" class="java.lang.String"/>
+	<field name="DealSize" class="java.lang.String"/>
+	<field name="JefferiesRole" class="java.lang.String"/>
+	<field name="Mandated" class="java.lang.String"/>
+	<field name="Bankers" class="java.lang.String"/>
+	<field name="JEFGross" class="java.lang.String"/>
+	<field name="SMBCFee" class="java.lang.String"/>
+	<field name="JFNFee" class="java.lang.String"/>
+	<field name="TotalGrossRevenue" class="java.lang.String"/>
+	<field name="SuccessProbability" class="java.lang.String"/>
+	<field name="FactoredRevenue" class="java.lang.String"/>
+	<field name="GroupSplit" class="java.lang.String"/>
+	<field name="BankerAllocation" class="java.lang.String"/>
+	<field name="Q1" class="java.lang.String"/>
+	<field name="Q2" class="java.lang.String"/>
+	<field name="Q3" class="java.lang.String"/>
+	<field name="Q4" class="java.lang.String"/>
+	<field name="Total" class="java.lang.String"/>
+	<title>
+		<band height="46">
+			<textField>
+				<reportElement x="0" y="0" width="400" height="30" forecolor="#044062" uuid="09f581d9-22bc-49aa-9b06-eeb2b1704a9e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Banker Print - Detail"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="26" width="100" height="20" uuid="ecc9fbdd-fca1-4eac-88b0-3f40e78de578"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Run:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="59">
+			<rectangle>
+				<reportElement mode="Opaque" x="-2" y="23" width="2040" height="36" forecolor="#FFFFFF" backcolor="#059EB8" uuid="971ebbb7-1960-4b66-98a9-2bb493835163"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Opaque" x="2" y="25" width="80" height="25" forecolor="#000000" backcolor="#059EB8" uuid="c24b4ed5-19b9-4d6f-b340-f7cdb1af5c37"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="24" width="80" height="33" uuid="f620740f-c5ad-466a-ab27-6d68e5be3f8a"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Title]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="161" y="24" width="80" height="33" uuid="8072918c-7921-411a-80a5-5d07965cd5fd"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Department]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="244" y="24" width="80" height="33" uuid="32ce6d69-e75a-4e4e-b6bf-36e90f62609f"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Start Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="325" y="25" width="80" height="32" uuid="a1da59a3-ec9b-4dec-840a-c22838694abb"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="407" y="24" width="80" height="32" uuid="5dd30173-7e53-471b-ad7e-799797559f72"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Client Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="488" y="23" width="80" height="33" uuid="ad5a2045-a565-4bc8-a627-d44ad94119b5"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Deal Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="569" y="23" width="80" height="36" uuid="4acce3b0-8a4d-4dc4-808e-c410c1637a5b"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="651" y="22" width="68" height="34" uuid="dfa3af4d-b5ba-407d-a4fa-117ba25979c3"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Transaction Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="722" y="20" width="66" height="39" uuid="436d5dee-648c-45dd-863d-b6325d2b2469"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Deal Size ($MM)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="791" y="25" width="45" height="32" uuid="f1259ce4-6b0c-49f3-9d8e-a230db09d938"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jefferies Role]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="839" y="26" width="80" height="30" uuid="38fd9e33-2eb9-46d8-b62a-7abf677d0e56"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mandated]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="920" y="23" width="80" height="33" uuid="6499a263-c2e4-4569-953a-0b0b7b934b87"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bankers]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1002" y="26" width="80" height="30" uuid="ec0ecc14-d068-4e55-868d-2866403699cc"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[JEF Gross]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1081" y="26" width="80" height="30" uuid="bf08cd41-ccd2-49ef-a720-7f6c64f12b02"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[SMBC Fee]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1161" y="27" width="80" height="29" uuid="1a2375b0-c08b-45b8-8d28-42f0e3b6b5d1"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[JFIN Fee]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1241" y="27" width="56" height="29" uuid="14f61675-0232-44b8-950e-d5e753b8dca0"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Gross Revenue]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1322" y="26" width="55" height="31" uuid="33a5afb9-0c8d-41c9-99f4-12936e1351da"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Success Probability]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1379" y="27" width="64" height="29" uuid="7df0c9a0-8040-401f-9ec9-93b842a3236b"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Factored Revenue]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1636" y="26" width="74" height="31" uuid="eaba8110-e0ba-41e7-83fc-83671728ae03"/>
+				<textElement verticalAlignment="Bottom">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Q1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1716" y="27" width="80" height="29" uuid="96d99986-257d-4397-bfb8-b950309ec617"/>
+				<textElement verticalAlignment="Bottom">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Q2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1796" y="26" width="80" height="31" uuid="a81c187d-978e-470a-81bc-a8f5332c22aa"/>
+				<textElement verticalAlignment="Bottom">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Q3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1876" y="27" width="80" height="29" uuid="9d0d048c-fb37-4e43-bc52-3647f144460d"/>
+				<textElement verticalAlignment="Bottom">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Q4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1956" y="22" width="81" height="35" uuid="05ba55c0-f510-4808-abcf-d7763cf2ceca"/>
+				<textElement verticalAlignment="Bottom">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="1002" y="3" width="468" height="18" forecolor="#044062" backcolor="#044062" uuid="d05bd3a4-e4ff-4511-b0d2-75dfce632e99"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="1161" y="3" width="100" height="18" forecolor="#F0F0F0" uuid="16b7b13c-5fc1-4113-8c78-4d9158cf885f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Pre-Group Split]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="1638" y="3" width="400" height="18" forecolor="#044062" backcolor="#044062" uuid="c0a23d84-039e-4637-a27b-0037ea19d2af"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="1731" y="5" width="100" height="15" forecolor="#F0F0F0" uuid="c22354fa-ae0f-49a7-ba6e-eeccf8830e37"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Quarterly Split]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="1472" y="3" width="164" height="18" forecolor="#044062" backcolor="#044062" uuid="24cd2b53-18a7-4633-bf6a-fb79406e4032"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="1516" y="3" width="100" height="18" forecolor="#F0F0F0" uuid="317e4f87-c2f7-4843-9fea-dc3f9b201d27"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Post-Group Split]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1471" y="26" width="80" height="30" uuid="99e5fc68-57f6-4b3f-b20f-ab1bd06536ad"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Group Split]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1552" y="27" width="64" height="32" uuid="d101e148-305b-40fb-97dc-40c19582c955"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bankers Allocation %]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="2" y="0" width="80" height="25" uuid="9dd55618-94df-449c-9bea-eb3bb09ec1f6"/>
+				<textElement verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="82" y="0" width="80" height="25" forecolor="#000000" backcolor="#FFFFFF" uuid="9a889e63-3b45-4d00-bc1c-e4a871141fbd"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="SansSerif" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Title}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="163" y="0" width="80" height="25" uuid="6789df0d-fd8a-4955-80bf-bde8b39228f6"/>
+				<textElement verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{Department}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="243" y="0" width="80" height="25" uuid="db555b2f-8ee0-4ca1-98f7-24b38ffc6a91"/>
+				<textElement verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{StartDate}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="325" y="0" width="80" height="25" uuid="c1603e77-bce6-4999-8622-546730341733"/>
+				<textElement verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{Status}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="410" y="0" width="80" height="25" uuid="0bd5260f-0adb-492f-91ed-18de32724188"/>
+				<textElement verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{ClientName}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="485" y="0" width="80" height="25" uuid="c3393805-9c33-4ef0-a1f4-2668cdc7afa2"/>
+				<textElement verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{DealCode}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="569" y="0" width="80" height="25" uuid="c96aae97-4822-4000-8283-c7489415fed3"/>
+				<textElement verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{Product}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="651" y="0" width="80" height="25" uuid="44150955-0bab-496b-905f-10bff81a0d00"/>
+				<textElement verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{TransactionType}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="722" y="0" width="80" height="25" uuid="1ff2f2ab-939a-411f-b84a-beeb5658f4c1"/>
+				<textElement verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{DealSize}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="792" y="0" width="44" height="25" uuid="15d393b6-f13a-4854-afb7-6d5ef9d35281"/>
+				<textElement verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{JefferiesRole}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="839" y="0" width="80" height="25" uuid="19a8d9d9-8a8c-4478-9835-d604e85d621b"/>
+				<textElement verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{Mandated}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="919" y="1" width="80" height="25" uuid="0ce28f3c-1d6a-4814-b054-b3eb6712e508"/>
+				<textElement verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{Bankers}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1002" y="0" width="80" height="25" uuid="737e674d-2f3d-4cc5-b842-fa5df05fa289"/>
+				<textElement textAlignment="Right" verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{JEFGross}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1081" y="0" width="80" height="25" uuid="1327b459-0cc2-4602-b82f-a072e7e0980f"/>
+				<textElement textAlignment="Right" verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{SMBCFee}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1161" y="0" width="62" height="25" uuid="4b7f683f-14ad-495b-86c0-dcdceaa29884"/>
+				<textElement textAlignment="Right" verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{JFNFee}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1241" y="0" width="56" height="25" uuid="6a8a3882-9f67-4ae0-8b38-656a09cdc53b"/>
+				<textElement textAlignment="Right" verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{TotalGrossRevenue}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1322" y="0" width="55" height="25" uuid="327825b1-f71a-4ebe-942c-635e3512478a"/>
+				<textElement textAlignment="Right" verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{SuccessProbability}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1379" y="0" width="64" height="25" uuid="72bd5936-84c5-4b67-b1cd-4f7b5f0fc42e"/>
+				<textElement textAlignment="Right" verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{FactoredRevenue}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1636" y="0" width="74" height="25" uuid="31565409-0ed5-448e-946c-dcad83014576"/>
+				<textElement textAlignment="Right" verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{Q1}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1794" y="2" width="80" height="25" uuid="3d3aeaf7-c492-415c-aba1-719e85877e73"/>
+				<textElement textAlignment="Right" verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{Q3}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1876" y="3" width="80" height="25" uuid="f2621dd0-c6f6-45ef-9e03-cb1f9b91627b"/>
+				<textElement textAlignment="Right" verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{Q4}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1955" y="3" width="80" height="25" uuid="42ddff31-8c97-4796-83f9-911dc11304a1"/>
+				<textElement textAlignment="Right" verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{Total}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1471" y="2" width="69" height="25" uuid="7b08d53c-315a-4739-93bc-1601d0de5cbc"/>
+				<textElement textAlignment="Right" verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{GroupSplit}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1552" y="2" width="64" height="25" uuid="a3c0d845-ff8d-4108-bbd5-2394d41d47cc"/>
+				<textElement textAlignment="Right" verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{BankerAllocation}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1716" y="1" width="80" height="25" uuid="ffcd970a-2baf-435a-9c62-f018c19009a4"/>
+				<textElement textAlignment="Right" verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$F{Q2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
